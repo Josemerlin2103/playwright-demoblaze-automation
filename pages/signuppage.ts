@@ -6,7 +6,6 @@ export class SignupPage {
     async opensignup(){
     await this.page.click('#signin2');
     }
-
     
     async enterUsername (username:string) {
     await this.page.fill('#sign-username',username);

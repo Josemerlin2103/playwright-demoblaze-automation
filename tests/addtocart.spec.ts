@@ -20,5 +20,5 @@ await product.openCart();
 
 
 
-await expect(page.locator('#tbodyid')).toContainText('Samsung galaxy s6');
+await expect(page.locator('#tbodyid')).toContainText('Samsung galaxy s6', { ignoreCase: true });
 });

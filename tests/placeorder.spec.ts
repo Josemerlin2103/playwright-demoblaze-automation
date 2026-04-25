@@ -1,6 +1,6 @@
 import { test,expect } from '@playwright/test';
 import { ProductPage } from '../pages/ProductPage';
-import { OrderPage } from '../pages/OrderPage';
+import { OrderPage } from '../pages/orderpage';
 
 test ('place order',async({page})=>{
 
@@ -11,7 +11,7 @@ test ('place order',async({page})=>{
     await dialog.accept();
     });
 
-    await product.openProduct();
+    await product.openProduct('Samsung galaxy s6');
     await product.addToCart();
 
     await page.waitForTimeout(2000);
@@ -19,7 +19,7 @@ test ('place order',async({page})=>{
     await product.openCart();
 
     await order.placeOrder();
-    await order.fillOrderDetails();
+    await order.fillOrderDetails('Bosh', 'India', 'Chennai', '123456789');
 
     await order.purchase();
 

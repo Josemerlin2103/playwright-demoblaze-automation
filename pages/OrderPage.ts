@@ -9,14 +9,13 @@ export class OrderPage {
         await this.page.getByRole('button', { name: 'Place Order' }).click();
     }
 
-    async  fillOrderDetails(){
-
-    await this.page.fill('#name','bosh');
-    await this.page.fill('#country','india');
-    await this.page.fill('#city','chennai');
-    await this.page.fill('#card', '123456789');
-    await this.page.fill('#month','12');
-    await this.page.fill('#year','2025');
+    async fillOrderDetails(name: string, country: string, city: string, card: string) {
+    await this.page.fill('#name', name);
+    await this.page.fill('#country', country);
+    await this.page.fill('#city', city);
+    await this.page.fill('#card', card);
+    await this.page.fill('#month', '12');
+    await this.page.fill('#year', '2026');
 }
 
     async purchase(){

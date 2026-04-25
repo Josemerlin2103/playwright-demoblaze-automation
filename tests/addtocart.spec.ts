@@ -21,7 +21,7 @@ for (const data of testData) {
         await product.addToCart();
 
         // 3. Verify the specific product is in the cart
-        await page.getByRole('link', { name: 'Cart', exact: true }).click();
+        await product.openCart();
         await expect(page.locator('#tbodyid')).toContainText(data.productName);
     });
 }

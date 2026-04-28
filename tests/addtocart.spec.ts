@@ -22,6 +22,7 @@ for (const data of testData) {
 
         // 3. Verify the specific product is in the cart
         await product.openCart();
-        await expect(page.locator('#tbodyid')).toContainText(data.productName);
+        // This waits up to 5 seconds for the specific product name to appear in the table
+await expect(page.locator('#tbodyid')).toContainText(data.productName, { timeout: 5000 });
     });
 }

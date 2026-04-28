@@ -10,5 +10,7 @@ export class ProductPage {
     }
     async openCart(){
     await this.page.getByRole('link', { name: 'Cart', exact: true }).click();
+    const cartTable = this.page.locator('#tbodyid');
+    await cartTable.waitFor({ state: 'visible', timeout: 10000 });
     }
 }

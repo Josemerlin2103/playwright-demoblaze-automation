@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('Verify DemoBlaze Product Entries API', async ({ request }) => {
-  // 1. Use the URL found in the Network tab
+  // 1. The URL found in the Network tab
   const response = await request.get('https://api.demoblaze.com/entries');
 
   // 2. Validate the status code is 200 

@@ -1,20 +1,17 @@
-# Playwright DemoBlaze Automation
+# Playwright E2E Automation - Demoblaze
 
-End-to-End automation framework built using **Playwright + TypeScript** for the DemoBlaze e-commerce demo site.
+A professional automation framework built using **Playwright** and **TypeScript** to test the Demoblaze e-commerce platform.
 
-## 🔧 Tech Stack
-- **Playwright**: Core automation engine.
-- **TypeScript**: Typed language for better code reliability.
-- **Page Object Model (POM)**: For maintainable and scalable test architecture.
-- **Node.js**: Execution environment.
+## 🚀 Key Features
+- **Page Object Model (POM)**: Organized code structure for better maintainability.
+- **Data-Driven Testing**: Test inputs are managed via `testData.json`.
+- **Advanced Assertions**: Reliable flows using Playwright's auto-waiting and locator logic.
 
-## 📁 Project Structure
-- `pages/`: Contains page classes with locators and actions (POM).
-- `tests/`: Contains the actual test scripts (Login, Add to Cart, etc.).
-- `utils/`: Reusable helper functions and constants.
-- `playwright.config.ts`: Main configuration for browsers and environments.
+## 🛠️ Tech Stack
+- **Language**: TypeScript
+- **Framework**: Playwright
+- **Pattern**: Page Object Model (POM)
 
-## 🚀 Getting Started
-1. Clone the repo
-2. Run `npm install`
-3. Execute tests with: `npx playwright test`
+## 📖 How to Run
+1. Install dependencies: `npm install`
+2. Run the test: `npx playwright test tests/tests/e2e_purchase_flow.spec.ts --headed`

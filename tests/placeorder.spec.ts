@@ -1,6 +1,6 @@
 import { test,expect } from '@playwright/test';
 import { ProductPage } from '../pages/ProductPage';
-import { OrderPage } from '../pages/orderpage';
+import { OrderPage } from '../pages/OrderPage';
 
 test ('place order',async({page})=>{
 

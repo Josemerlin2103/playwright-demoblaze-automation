@@ -1,3 +1,4 @@
+![Playwright Tests](https://github.com/Josemerlin2103/playwright-demoblaze-automation/actions/workflows/playwright.yml/badge.svg)
 # Playwright E2E Automation - Demoblaze
 
 A professional automation framework built using **Playwright** and **TypeScript** to test the Demoblaze e-commerce platform.

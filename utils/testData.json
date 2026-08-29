@@ -1,5 +1,29 @@
 [
-  { "productName": "Samsung galaxy s6" },
-  { "productName": "Nokia lumia 1520" },
-  { "productName": "Nexus 6" }
+  {
+    "productName": "Samsung galaxy s6",
+    "name": "Jose Merlin",
+    "country": "India",
+    "city": "Chennai",
+    "card": "1234567890",
+    "month": "12",
+    "year": "2026"
+  },
+  {
+    "productName": "Nokia lumia 1520",
+    "name": "Jose Merlin",
+    "country": "India",
+    "city": "Chennai",
+    "card": "1234567890",
+    "month": "12",
+    "year": "2026"
+  },
+  {
+    "productName": "Nexus 6",
+    "name": "Jose Merlin",
+    "country": "India",
+    "city": "Chennai",
+    "card": "1234567890",
+    "month": "12",
+    "year": "2026"
+  }
 ]

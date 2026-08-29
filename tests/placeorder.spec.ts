@@ -19,8 +19,14 @@ test ('place order',async({page})=>{
     await product.openCart();
 
     await order.placeOrder();
-    await order.fillOrderDetails('Bosh', 'India', 'Chennai', '123456789');
-
+    await order.fillOrderDetails(
+    'Bosh',
+    'India',
+    'Chennai',
+    '123456789',
+    '12',
+    '2028'
+);
     await order.purchase();
 
     

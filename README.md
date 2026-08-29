@@ -14,5 +14,15 @@ A professional automation framework built using **Playwright** and **TypeScript*
 - **Pattern**: Page Object Model (POM)
 
 ## 📖 How to Run
+
 1. Install dependencies: `npm install`
-2. Run the test: `npx playwright test tests/tests/e2e_purchase_flow.spec.ts --headed`
+
+2. Install Playwright browsers: `npx playwright install`
+
+3. Run all tests: `npx playwright test`
+
+4. Run the E2E purchase flow: `npx playwright test tests/tests/e2e_purchase_flow.spec.ts`
+
+5. Run tests in headed mode: `npx playwright test --headed`
+
+6. View the HTML report: `npx playwright show-report`
